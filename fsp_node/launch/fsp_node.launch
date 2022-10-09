@@ -1,0 +1,11 @@
+<launch>
+
+  <arg name="use_map_topic" default="false"/>
+
+   <!-- <node pkg="image_transport" type="republish" name="rgb_compress" args="compressed in:=/camera/color/image_raw raw out:=/camera/color/image_raw"/>
+
+   <node pkg="image_transport" type="republish" name="depth_compress" args="compressed in:=/camera/aligned_depth_to_color/image_raw raw out:=/camera/aligned_depth_to_color/image_raw"/> -->
+
+   <node pkg="fsp_node" type="fsp_node.py" name="fsp_node"/>
+
+</launch>
